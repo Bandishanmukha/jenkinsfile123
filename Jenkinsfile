@@ -5,6 +5,7 @@ pipeline {
         steps{
            sh "ls -la"
            sh "cat Jenkinsfile"
+           sh "sudo chmod 700 script.sh"
            sh "sudo ./script.sh"
         }
      }
