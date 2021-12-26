@@ -6,7 +6,7 @@ pipeline {
            sh "ls -la"
            sh "cat Jenkinsfile"
            sh "chmod 700 ./script.sh"
-           sh "sudo ./script.sh"
+           sh "./script.sh"
         }
      }
      stage('jenkinsfile') {
