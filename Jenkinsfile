@@ -1,10 +1,10 @@
-pipeline{
-  agent any
-  stages{
-     stage('Hello_World'){
-        steps{
-           echo 'Hello world'
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'ls -la
+                sh 'pwd'
+            }
         }
-     }
-  }
-}
+    }
