@@ -5,7 +5,7 @@ pipeline {
         steps{
            sh "ls -la"
            sh "cat Jenkinsfile"
-           sh "./script.sh"
+           sh "sudo ./script.sh"
         }
      }
      stage('jenkinsfile') {
